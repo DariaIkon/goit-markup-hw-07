@@ -75,16 +75,16 @@
         </div>
         </header>
         <!-- / site header -->
-            <!-- top -->
-        <section class="studio-top overlay">
+            <!-- hero -->
+        <section class="hero overlay">
             <div class="container">
-                <div class="studio-top-box">
-                    <h1 class="top-name">
+                <div class="hero-box">
+                    <h1 class="hero-heading">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <div class="top-btn">
+                    <div class="hero-btn">
                         <button 
-                            class="top-button" 
+                            class="hero-button" 
                             data-modal-open
                             >Заказать услугу
                         </button>
@@ -92,7 +92,7 @@
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <button 
-                                class="modal-close-btn" 
+                                class="btn-close-modal" 
                                 data-modal-close>
                                 <svg>
                                     <use href="./images/sprite-modal.svg#modal-form-close-btn">
@@ -102,7 +102,7 @@
                             <h3>Оставьте свои данные, мы вам перезвоним</h3>
                             <form class="form">
                                     <label class="form-label form-label-name">Имя
-                                        <span class="input-wrapper">
+                                        <span class="form-input-wrapper">
                                             <span class="form-icon">
                                                 <svg>
                                                     <use href="./images/sprite-modal.svg#modal-form-person">
@@ -113,7 +113,7 @@
                                         </span>
                                     </label>
                                     <label class="form-label form-label-phone">Телефон
-                                        <span class="input-wrapper">
+                                        <span class="form-input-wrapper">
                                             <span class="form-icon">
                                                 <svg>
                                                     <use href="./images/sprite-modal.svg#modal-form-phone">
@@ -124,7 +124,7 @@
                                         </span>
                                     </label>
                                     <label class="form-label form-label-mail">Почта
-                                        <span class="input-wrapper">
+                                        <span class="form-input-wrapper">
                                             <span class="form-icon">
                                                 <svg>
                                                     <use href="./images/sprite-modal.svg#modal-form-mail">
@@ -137,71 +137,76 @@
                                     <label class="form-textarea">Комментарий
                                         <textarea name="textarea" cols="30" rows="10" placeholder="Введите текст"></textarea>
                                     </label> 
-                                    <label class="label-checkbox">
-                                        <input class="input-checkbox" type="checkbox" name="contract" value="accept" required/>
-                                        <span class="modal-checkbox-icon"></span>
-                                        <p class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                                    <label class="form-label-checkbox">
+                                        <input 
+                                            class="form-input-checkbox" 
+                                            type="checkbox" 
+                                            name="contract" 
+                                            value="accept" 
+                                            required
+                                        />
+                                        <span class="form-icon-checkbox"></span>
+                                        <span class="form-text-checkbox">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></span>
                                     </label>
                                     <button 
-                                        class="modal-submit-btn" 
+                                        class="btn-submit-modal" 
                                         type="submit" 
                                         data-modal-close
                                     >
                                         Отправить
                                     </button>
                             </form>        
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-            <!-- / top -->
+            <!-- / hero -->
             <!-- main info  -->
-        <section class="main-info">
+        <section class="advantage">
             <div class="container">
-                <ul class="main-info-list list-no-style" >
-                    <li class="main-info-item">
-                        <div class="icon-list-main-info">
-                            <svg class="icon-main-info antenna">
+                <ul class="advantage-list list-no-style" >
+                    <li class="advantage-item">
+                        <div class="advantage-icon-list">
+                            <svg class="advantage-icon antenna">
                                 <use href="./images/sprite.svg#antenna"></use>
                             </svg>
                         </div>
-                            <h3 class="headline-top">Внимание к деталям</h3>
-                            <p class="main-info-text">Идейные соображения, а также начало повседневной
+                            <h3 class="advantage-heading">Внимание к деталям</h3>
+                            <p class="advantage-text">Идейные соображения, а также начало повседневной
                             работы по формированию позиции.
                             </p>
                     </li>
-                    <li class="main-info-item"> 
-                        <div class="icon-list-main-info">
-                            <svg class="icon-main-info clock">
+                    <li class="advantage-item"> 
+                        <div class="advantage-icon-list">
+                            <svg class="advantage-icon clock">
                                 <use href="./images/sprite.svg#clock"></use>
                             </svg>
                         </div>  
-                            <h3 class="headline-top">Пунктуальность</h3>
-                            <p class="main-info-text">Задача организации, в особенности же рамки и место обучения кадров 
+                            <h3 class="advantage-heading">Пунктуальность</h3>
+                            <p class="advantage-text">Задача организации, в особенности же рамки и место обучения кадров 
                                 влечет за собой.
                             </p>
                     </li>
-                    <li class="main-info-item">
-                        <div class="icon-list-main-info">
-                            <svg class="icon-main-info diagram">
+                    <li class="advantage-item">
+                        <div class="advantage-icon-list">
+                            <svg class="advantage-icon diagram">
                                 <use href="./images/sprite.svg#diagram"></use>
                             </svg>
                         </div>
-                            <h3 class="headline-top">Планирование</h3>
-                            <p class="main-info-text">Равным образом консультация с широким активом в значительной 
+                            <h3 class="advantage-heading">Планирование</h3>
+                            <p class="advantage-text">Равным образом консультация с широким активом в значительной 
                                 степени обуславливает.
                             </p>
                     </li>
-                    <li class="main-info-item">
-                        <div class="icon-list-main-info">
-                            <svg class="icon-main-info astronaut">
+                    <li class="advantage-item">
+                        <div class="advantage-icon-list">
+                            <svg class="advantage-icon astronaut">
                                 <use href="./images/sprite.svg#astronaut"></use>
                             </svg>
                         </div>
-                            <h3 class="headline-top">Современные технологии</h3>
-                            <p class="main-info-text">Значимость этих проблем настолько очевидна, что реализация плановых 
+                            <h3 class="advantage-heading">Современные технологии</h3>
+                            <p class="advantage-text">Значимость этих проблем настолько очевидна, что реализация плановых 
                                 заданий.
                             </p>
                     </li>
@@ -211,7 +216,7 @@
             <!-- / main info -->
             <!-- activities -->
         <section class="activities">
-            <h2 class="headline-activities">Чем мы занимаемся</h2>
+            <h2 class="activities-heading">Чем мы занимаемся</h2>
             <div class="container">
                 <ul class="activities-list list-no-style">
                     <li>
@@ -262,7 +267,7 @@
                 <!-- team -->
         <section class="team">
             <div class="container">
-                <h2 class="headline-team">Наша команда</h2>
+                <h2 class="heading-team">Наша команда</h2>
                 <ul class="team-list list-no-style">
                     <li class="box-team-card">
                         <img 
@@ -274,13 +279,13 @@
                         <div class="team-text-card">
                             <h3>Игорь Демьяненко</h3>
                             <p>Product Designer</p>
-                            <ul class="list-no-style">
+                            <ul class="team-list-icon list-no-style">
                                 <li>
                                     <a  
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-instagram">
-                                        <svg class="icon-instagram">
+                                        <svg class="svg-icon  icon-instagram">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -291,7 +296,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-twitter"
                                     >
-                                        <svg class="icon-twitter">
+                                        <svg class="svg-icon icon-twitter">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -302,7 +307,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-facebook"
                                     >
-                                        <svg class="icon-facebook">
+                                        <svg class="svg-icon icon-facebook">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -313,7 +318,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-linkedin"
                                     >
-                                        <svg class="icon-linkedin">
+                                        <svg class="svg-icon icon-linkedin">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -331,14 +336,14 @@
                         <div class="team-text-card">  
                             <h3>Ольга Репина</h3>
                             <p>Frontend Developer</p>
-                            <ul class="list-no-style">
+                            <ul class="team-list-icon list-no-style">
                                 <li>
                                     <a  
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-instagram"
                                     >
-                                        <svg class="icon-instagram">
+                                        <svg class="svg-icon icon-instagram">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -349,7 +354,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-twitter"
                                     >
-                                        <svg class="icon-twitter">
+                                        <svg class="svg-icon icon-twitter">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -360,7 +365,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-facebook"
                                     >
-                                        <svg class="icon-facebook">
+                                        <svg class="svg-icon icon-facebook">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -371,7 +376,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-linkedin"
                                     >
-                                        <svg class="icon-linkedin">
+                                        <svg class="svg-icon icon-linkedin">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -389,14 +394,14 @@
                         <div class="team-text-card">
                             <h3>Николай Тарасов</h3>
                             <p>Marketing</p>
-                            <ul class="list-no-style">
+                            <ul class="team-list-icon list-no-style">
                                 <li>
                                     <a  
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-instagram"
                                     >
-                                        <svg class="icon-instagram">
+                                        <svg class="svg-icon icon-instagram">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -407,7 +412,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-twitter"
                                     >
-                                        <svg class="icon-twitter">
+                                        <svg class="svg-icon icon-twitter">
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -418,7 +423,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-facebook"
                                     >
-                                        <svg class="icon-facebook">
+                                        <svg class="svg-icon icon-facebook">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -429,7 +434,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-linkedin"
                                     >   
-                                        <svg class="icon-linkedin">
+                                        <svg class="svg-icon icon-linkedin">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -447,14 +452,14 @@
                         <div class="team-text-card">
                             <h3>Михаил Ермаков</h3>
                             <p>UI Designer</p>
-                            <ul class="list-no-style">
+                            <ul class="team-list-icon list-no-style">
                                 <li>
                                     <a  
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-instagram"
                                     >
-                                        <svg class="icon-instagram">
+                                        <svg class="svg-icon icon-instagram">
                                             <use href="./images/sprite.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -465,7 +470,7 @@
                                         class="team-list-link" 
                                         aria-label="icon-twitter"
                                     >
-                                        <svg class="icon-twitter"> 
+                                        <svg class="svg-icon icon-twitter"> 
                                             <use href="./images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
@@ -475,7 +480,7 @@
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-facebook">
-                                        <svg class="icon-facebook">
+                                        <svg class="svg-icon icon-facebook">
                                             <use href="./images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -485,7 +490,7 @@
                                         href="" 
                                         class="team-list-link" 
                                         aria-label="icon-linkedin">
-                                        <svg class="icon-linkedin">
+                                        <svg class="svg-icon icon-linkedin">
                                             <use href="./images/sprite.svg#linkedin"></use>
                                         </svg>
                                     </a>
@@ -501,7 +506,7 @@
 
             <!-- clients -->
         <section class="clients">
-            <h2 class="clients-headline">Постоянные клиенты</h2>
+            <h2 class="clients-heading">Постоянные клиенты</h2>
             <div class="container">
                 <ul class="clients-list-logos list-no-style">
                     <li>
@@ -579,11 +584,11 @@
                     >Web<span class="webstudio-white">Studio</span></a
                     >
                 </div>
-                <div class="add">
+                <div class="footer-list-contacts">
                     <address class="address"> 
                         г. Киев, пр-т Леси Украинки, 26
                     </address>
-                    <ul class="footer-list-contacts list-no-style">
+                    <ul class="footer-item-contacts list-no-style">
                         <li>
                             <a href="malito:info@example.com"
                             >info@example.com</a
@@ -605,7 +610,7 @@
                             class="footer-item-icon" 
                             aria-label="icon-instagram"
                         >
-                            <svg class="footer-icon icon-instagram">
+                            <svg class="svg-icon footer-icon icon-instagram">
                                 <use href="./images/sprite.svg#instagram"></use>
                             </svg>
                         </a>
@@ -615,7 +620,7 @@
                             href="" 
                             class="footer-item-icon" 
                             aria-label="icon-twitter">
-                            <svg class="footer-icon icon-twitter"> 
+                            <svg class="svg-icon footer-icon icon-twitter"> 
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
@@ -624,7 +629,7 @@
                         <a  href="" 
                             class="footer-item-icon" 
                             aria-label="icon-facebook">
-                            <svg class="footer-icon icon-facebook">
+                            <svg class="svg-icon footer-icon icon-facebook">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
@@ -633,7 +638,7 @@
                         <a  href="" 
                             class="footer-item-icon" 
                             aria-label="icon-linkedin">
-                            <svg class="footer-icon icon-linkedin">
+                            <svg class="svg-icon footer-icon icon-linkedin">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
                         </a>

@@ -1,0 +1,71 @@
+.team {
+  display: flex;
+  margin: 0 auto;
+  background-color: $bg-gray-light-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .heading-team {
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-dark-color;
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    .box-team-card {
+      background-color: $main-light-color;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+    .team-text-card {
+      padding: 30px;
+      font-size: 16px;
+      line-height: 1.186;
+      text-align: center;
+      letter-spacing: 0.03em;
+      h3 {
+        margin: 0;
+        color: $main-dark-color;
+      }
+      p {
+        margin: 0;
+        font-weight: normal;
+        color: $main-gray-color;
+        margin-top: 10px;
+      }
+      .team-list-icon {
+        display: flex;
+        justify-content: space-between;
+        .team-list-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: $main-light-color;
+          width: 44px;
+          height: 44px;
+          margin-top: 16px;
+          svg {
+            fill: $fill-gray-color;
+          }
+          &:hover,
+          &:focus {
+            background-color: $accent-color;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          &:hover svg,
+          &:focus svg {
+            fill: $main-light-color;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+        }
+      }
+    }
+  }
+}

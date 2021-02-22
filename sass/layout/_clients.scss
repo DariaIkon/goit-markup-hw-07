@@ -1,0 +1,64 @@
+.clients {
+  padding-bottom: 94px;
+  .clients-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-dark-color;
+    margin: 0;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.clients-item-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $fill-gray-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 auto;
+  fill: $fill-gray-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients-logo-1 {
+    width: 44px;
+    height: 49px;
+  }
+  .clients-logo-2 {
+    width: 40px;
+    height: 52px;
+  }
+  .clients-logo-3 {
+    width: 41px;
+    height: 43px;
+  }
+  .clients-logo-4 {
+    width: 80px;
+    height: 42px;
+  }
+  .clients-logo-5 {
+    width: 59px;
+    height: 47px;
+  }
+  .clients-logo-6 {
+    width: 88px;
+    height: 45px;
+  }
+}

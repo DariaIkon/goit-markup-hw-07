@@ -1,0 +1,165 @@
+.header-portfolio {
+  border: 1px solid #ececec;
+  .link-portfolio {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
+.portfolio {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 94px;
+}
+/* button */
+.btn-portfolio {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 611px;
+  height: 54px;
+  ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  li {
+    padding-right: 8px;
+    .btn-menu {
+      background: $bg-gray-light-color;
+      font-size: 16px;
+      line-height: 1.625;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $main-dark-color;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 0px;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $main-light-color;
+        background-color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    .btn-menu-all {
+      width: 73px;
+      min-height: 38px;
+    }
+    .btn-menu-site {
+      width: 128px;
+      min-height: 38px;
+    }
+    .btn-menu-app {
+      width: 145px;
+      min-height: 38px;
+    }
+    .btn-menu-design {
+      width: 103px;
+      min-height: 38px;
+    }
+    .btn-menu-marketing {
+      width: 130px;
+      min-height: 38px;
+    }
+  }
+}
+/* menu */
+.menu-portfolio {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 89px;
+  .container-card {
+    margin-left: 0;
+    margin-right: 0;
+    .menu-list-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: calc(-1 * 30px);
+      margin-bottom: calc(-1 * 30px);
+      li {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-right: $indent-portfolio;
+        margin-bottom: $indent-portfolio;
+      }
+      .box-portfolio {
+        background-color: $main-light-color;
+        border: 1px solid $border-light-gray-color;
+        .box-portfolio-link:hover,
+        .box-portfolio-link:focus {
+          box-sizing: border-box;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+      .portfolio-text-card {
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        h2 {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 2;
+          letter-spacing: 0.06em;
+          color: $main-dark-color;
+          margin: 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.875;
+          letter-spacing: 0.03em;
+          color: $main-gray-color;
+          margin: 0;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .portfolio-info-thumb {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 63px 24px 63px 24px;
+    width: 100%;
+    height: 100%;
+    background: $portfolio-info-thumb;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: $main-light-color;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.box-portfolio-link:hover .portfolio-info-thumb,
+.box-portfolio-link:focus .portfolio-info-thumb {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-portfolio:visited {
+  color: $accent-color;
+}
